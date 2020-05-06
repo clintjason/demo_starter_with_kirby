@@ -43,34 +43,32 @@ function resetForm() {
 
 window.addEventListener('scroll',scrollToTop);
 
+/*  
+window.addEventListener('resize',()=> {
+    let x = document.getElementById("menuItems");
+    let y = document.querySelector("header");
+    let hamburger = document.querySelector('.icon');
     
-/*
-    window.addEventListener('resize',()=> {
-        let x = document.getElementById("menuItems");
-        let y = document.querySelector("header");
-        let hamburger = document.querySelector('.icon');
-        
-        if (hamburger.style.display === "none" && window.innerWidth >= 900) {
-            x.style.display = "block";
-            y.style.height = "auto";
-            x.style.top = "unset";
-            x.style.right = "unset";
-        } else if(hamburger.style.display === "block" && window.innerWidth < 900) {
-            x.style.display = "none";
-            y.style.height="auto";
-            x.style.top = "unset";
-            x.style.right = "unset";
-        } else if( window.innerWidth >= 900) {
-            x.style.display = "block ruby";
-            y.style.height="auto";
-            x.style.top = "unset";
-            x.style.right = "unset";
-        } else {
-            x.style.top = "70px";
-            x.style.right = "22vw";
-            y.style.height = "180px";
-            x.style.display = "block";
-        }
-
-    });
-    */
+    if (hamburger.style.display === "none" && window.innerWidth >= 900) {
+        x.style.display = "block ruby";
+        y.style.height = "auto";
+        x.style.top = "unset";
+        x.style.right = "unset";
+    } else if(hamburger.style.display === "block" && window.innerWidth < 900) {
+        x.style.display = "none";
+        y.style.height="auto";
+        x.style.top = "unset";
+        x.style.right = "unset";
+    } else if( x.style.display === "none" && window.innerWidth >= 900) {
+        x.style.display = "block ruby";
+        y.style.height="auto";
+        x.style.top = "unset";
+        x.style.right = "unset";
+    } else {
+        x.style.top = "70px";
+        x.style.right = "22vw";
+        y.style.height = "180px";
+        x.style.display = "block";
+    }
+});
+*/

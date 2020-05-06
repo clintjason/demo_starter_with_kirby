@@ -1,3 +1,5 @@
+# TESTING BROWSER IS FIREFOX
+
 # Kirby Plainkit
 
 Kirby is a file-based CMS.

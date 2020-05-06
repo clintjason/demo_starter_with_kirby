@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
     <section class="contact-header">
-      <?php if($image = $page->image('contact-us.png')): ?>
+      <?php if($image = $page->image('contact-us.webp')): ?>
           <img src="<?= $image->url() ?>" alt="Contact Us Header Image">
       <?php endif ?>
       <div><?= $page->contactinfo()->kirbytext() ?> </div>
