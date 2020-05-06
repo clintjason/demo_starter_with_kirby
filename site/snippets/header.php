@@ -29,13 +29,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Stylesheets can be included using the `css()` helper. Kirby also provides the `js()` helper to include script file. 
         More Kirby helpers: https://getkirby.com/docs/reference/templates/helpers -->
-  <?= css(['assets/css/index.min.css', '@auto']) ?>
+  <?= css(['assets/css/index.css', '@auto']) ?>
 
   <?= page('home')->fbpixel() ?>
   <?= page('home')->ganalytics() ?>
 </head>
 <body>
-<?php if (!$kirby->user()->role()==='Client') go('login') ?>
     <header>
       <!-- In this link we call `$site->url()` to create a link back to the homepage -->
       <a class="logo" href="<?= $site->url() ?>"><?= $site->image()->resize(80)->html(['alt' => $site->logoAlt()->html()]) ?></a>
@@ -46,7 +45,7 @@
           foreach ($site->children()->listed() as $item): ?>
           <a href="<?= $item->url() ?>"><?= $item->title() ?></a>
           <?php endforeach ?>
-          <?php if ($kirby->user()->role()==='Client'): ?>
+          <?php if (!$kirby->user()->isAdmin()): ?>
               <a href="<?= url('logout') ?>">Logout</a>
           <?php endif ?>
         </div>

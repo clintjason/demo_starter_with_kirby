@@ -2,11 +2,12 @@
 
 return function ($kirby) {
 
+    /*
   // don't show the login screen to already logged in users
-  if ($kirby->user()->role()==='Client') {
+  if (kirby()->user()->role()==='client') {
     go('/');
   }
-
+*/
   $error = false;
 
   // handle the form submission

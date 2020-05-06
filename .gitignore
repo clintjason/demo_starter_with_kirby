@@ -3,7 +3,8 @@
 
 Icon
 .DS_Store
-
+.vscode/
+.zip
 # Temporary files
 # ---------------
 
