@@ -2,15 +2,15 @@ Title: Main
 
 ----
 
-Noindex: true
+Noindex: false
 
 ----
 
-Metatitle: BEST IN TORONTO
+Metatitle: Optimize the title suitable target seo query
 
 ----
 
-Metadescription: new employee is jason
+Metadescription: Obtain suitable optimized description for proper referencing
 
 ----
 
@@ -95,11 +95,11 @@ Poole A., Catano, VM., and Cunningham, DP. Predicting performance in Canadian de
 
 ----
 
-Ogtitle: another wanderful description
+Ogtitle: This is my title when i am shared on a social media platform.
 
 ----
 
-Ogdescription: a wanderful description
+Ogdescription: This is my description when i am shared on a social media platform.
 
 ----
 
