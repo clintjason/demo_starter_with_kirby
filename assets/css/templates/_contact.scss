@@ -1,0 +1,81 @@
+.honeypot {
+    position: absolute;
+    left: -9999px;
+}
+
+section.contact-header {
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+section.form {
+    padding: 1rem 1.5rem 1rem 1rem;
+    letter-spacing: 2px;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    color: #373737;
+
+    .field {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 15px;
+        color: #333333;
+
+        input,textarea {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #CCCCCC;
+            font-size: 14px;
+        }
+
+        label {
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+
+    .alert {
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: #fff;
+        margin-bottom: 15px;
+
+        &.success {
+            background-color: rgba(0, 128, 0, 0.849);
+            opacity: 0;
+            animation: fade 2s linear;
+        }
+
+        &.error {
+            background-color: rgba(255, 0, 0, 0.856);
+            opacity: 0;
+            animation: fade 2s linear;
+        }
+    }
+
+    .btn-container {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+
+        input[type=button],input[type=submit] {
+            padding: 10px 20px;
+            letter-spacing: 2px;
+        }
+
+        @media all and (min-width: 350px){
+            flex-flow: nowrap row;
+    
+            & input:last-of-type {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    & div:last-child {
+        margin-top: 20px;
+    }
+
+
+}

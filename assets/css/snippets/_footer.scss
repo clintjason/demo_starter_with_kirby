@@ -1,0 +1,33 @@
+footer {
+    background-color: #000066;
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    a {
+        color: #FF6600;
+        text-decoration:underline
+        &:hover {
+            color: #909090;
+        }
+    }
+    div.social-icons {
+        text-align: center;
+        i {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    }
+    p {
+        text-align: center;
+    }
+
+    @media all and (min-width: 980px) {
+        justify-content: space-between;
+        flex-flow: nowrap row;
+        div.social-icons {
+            margin-right: 15px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    box-sizing: border-box;
+    background: $body_background_color;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    margin-top: 2rem; //5.5
+    padding-bottom: 15px;
+}
+
+.scrollup {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    z-index: 99;
+}

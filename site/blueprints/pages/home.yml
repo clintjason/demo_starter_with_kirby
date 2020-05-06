@@ -1,0 +1,79 @@
+title: Home
+        
+tabs:
+
+  # main content
+  content:
+    label: Page Setup
+    columns:
+      - width: 1/2
+        sections:
+          content:
+            type: fields
+            fields:
+              noindex:
+                label: Allow Search Engines To Index Your Page
+                type: toggle
+              metatitle:
+                label: Meta Title
+                type: text
+              metadescription:
+                label: Meta Description
+                type: text
+              coverheading:
+                label: Cover Image Text
+                type: text
+              text:
+                label: Site Text
+                type: textarea
+                size: large
+      - width: 1/2
+        sections:
+          coverImage:
+            headline: Upload Cover Image
+            type: files
+            layout: cards
+            help: Just upload a single header image
+            max: 1
+            image:
+              cover: true
+              ratio: 1/1
+      - width: 1/1
+        sections:
+          media:
+            type: fields
+            fields:
+              headline: 
+                label: Open Graph Meta Tags Configuration
+              info:
+                label: Info
+                type: info
+                theme: positive
+                text: This enables you to configure your page appearance on social media platforms when shared.
+              ogtitle:
+                label: Shared Title
+                type: text
+                text: "{{ site.title | page.metatitle }}"
+              ogdescription:
+                label: Shared Description
+                type: text
+                text: "{{ page.metadescription }}"
+  # meta information
+  meta:
+    label: SEO TAGS
+    sections:
+      meta:
+        type: fields
+        fields:
+          fbpixel:
+            label: Facebook Advertising Pixel Code
+            type: textarea
+            help: Paste the Fb Ads pixel code in the code tag in the field
+          ganalytics:
+            label: Google Analytics Code
+            type: textarea
+            help: Paste the google analytics code in the code tag in the field
+
+
+
+

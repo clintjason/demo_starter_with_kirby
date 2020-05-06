@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,MADE,AAAA,MAAM,CACR,EAAE,CAAC;EACC,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,KAAK;CACnB;;AAJL,AAKI,MALE,AAAA,MAAM,CAKR,CAAC,CAAC;EACE,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "error.scss"
+    ],
+    "names": [],
+    "file": "error.css"
+}

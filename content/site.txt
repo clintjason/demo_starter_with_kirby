@@ -1,0 +1,9 @@
+Title: BeMo Academic Consulting Inc
+----
+logoAlt: BeMo Academic Consulting Inc Logo
+----
+copyright: ©2013-2016 BeMo Academic Consulting Inc. All rights reserved.
+----
+disclaimer: Disclaimer &amp; Privacy Policy
+----
+contact: Contact Us
