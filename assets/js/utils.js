@@ -13,7 +13,7 @@ function makeResponsive() {
         x.style.top = "unset";
         x.style.right = "unset";
     } else {
-        x.style.top = "70px";
+        x.style.top = "50px";
         x.style.right = "22vw";
         y.style.height = "180px";
         x.style.display = "block";

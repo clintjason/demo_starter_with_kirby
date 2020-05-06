@@ -19,7 +19,9 @@
   <meta property="og:site_name" content="<?= $site->title() ?>" />
   <meta property="og:title" content="<?= $page->ogtitle()->text() ?>" />
   <meta property="og:description" content="<?= $page->ogdescription()->text() ?>" />
-  <meta property="og:image" content="<?= $page->image()->resize(180,180)->url() ?>" />
+  <?php if($page->image()):?>
+    <meta property="og:image" content="<?= $page->image()->resize(180,180)->url() ?>" />
+  <?php endif ?>
   <meta property="og:url" content="<?= $page->url() ?>"/>
   <!-- The title tag we show the title of our site and the title of the current page -->
   <title><?= $site->title() ?> | <?= $page->metatitle() ?></title>
@@ -33,6 +35,7 @@
   <?= page('home')->ganalytics() ?>
 </head>
 <body>
+<?php if (!$kirby->user()->role()==='Client') go('login') ?>
     <header>
       <!-- In this link we call `$site->url()` to create a link back to the homepage -->
       <a class="logo" href="<?= $site->url() ?>"><?= $site->image()->resize(80)->html(['alt' => $site->logoAlt()->html()]) ?></a>
@@ -43,6 +46,9 @@
           foreach ($site->children()->listed() as $item): ?>
           <a href="<?= $item->url() ?>"><?= $item->title() ?></a>
           <?php endforeach ?>
+          <?php if ($kirby->user()->role()==='Client'): ?>
+              <a href="<?= url('logout') ?>">Logout</a>
+          <?php endif ?>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="makeResponsive()">
           <i class="fa fa-bars fa-2x"></i>
