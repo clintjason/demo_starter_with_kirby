@@ -25,7 +25,7 @@
   <meta property="og:url" content="<?= $page->url() ?>"/>
   <!-- The title tag we show the title of our site and the title of the current page -->
   <title><?= $site->title() ?> | <?= $page->metatitle() ?></title>
-  <link rel="shortcut icon" type="image" href="<?= $site->image()->resize(20,20)->url() ?>" />
+  <link rel="shortcut icon" type="image" href="<?= $site->image('bemo-logo2.webp')->resize(20,20)->url() ?>" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Stylesheets can be included using the `css()` helper. Kirby also provides the `js()` helper to include script file. 
         More Kirby helpers: https://getkirby.com/docs/reference/templates/helpers -->
@@ -37,7 +37,7 @@
 <body>
     <header>
       <!-- In this link we call `$site->url()` to create a link back to the homepage -->
-      <a class="logo" href="<?= $site->url() ?>"><?= $site->image()->resize(80)->html(['alt' => $site->logoAlt()->html()]) ?></a>
+      <a class="logo" href="<?= $site->url() ?>"><?= $site->image('bemo-logo2.webp')->html(['alt' => $site->logoAlt()->html()]) ?></a>
 
       <nav id="menu" class="menu">
         <div id="menuItems">
