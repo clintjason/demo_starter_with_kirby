@@ -52,14 +52,8 @@ img {
 }
 
 main {
-  margin-top: 8rem;
+  margin-top: 2rem;
   padding-bottom: 15px;
-}
-
-@media all and (min-width: 900px) {
-  main {
-    margin-top: 5rem;
-  }
 }
 
 .scrollup {
@@ -71,7 +65,7 @@ main {
 
 body {
   font-family: 'Montserrat', 'Roboto', sans-serif;
-  color: #141414;
+  color: #373737;
   font-weight: 100;
   line-height: 1.7;
 }
@@ -91,10 +85,6 @@ header {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-header.resp {
-  height: 235px;
-}
-
 header nav {
   position: relative;
   width: 50%;
@@ -111,10 +101,18 @@ header nav > div#menuItems {
   position: relative;
 }
 
-header nav > div#menuItems.responsive {
-  display: block;
-  top: 100px;
-  right: 20vw;
+header nav > div#menuItems a {
+  /*
+				&::after {
+					content: "";
+					display: none;
+					height: 1px;
+					padding-bottom: 3px;
+					border-bottom: 1px solid;
+					margin: 0px auto;
+					text-align: center;
+					width: 20px;
+				}*/
 }
 
 header nav > div#menuItems a:link {
@@ -140,24 +138,16 @@ header nav > a.icon {
   display: block;
   position: absolute;
   right: 0;
-  top: 25px;
+  top: 7px;
 }
 
 @media all and (min-width: 900px) {
   header nav > div#menuItems {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: block ruby !important;
   }
   header nav > div#menuItems a {
     display: inline-block;
     margin-right: 15px;
-    position: relative;
-    top: 30px;
-    height: 35px;
-  }
-  header nav > div#menuItems a:last-child {
-    padding-top: inherit;
   }
   header nav > a.icon {
     display: none;

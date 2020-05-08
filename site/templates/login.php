@@ -52,7 +52,7 @@
 <section class="form" style="margin-top:10rem">
 <h1><?= $page->title()->html() ?></h1>
 <?php if($error): ?>
-<div class="alert"><?= $page->alert()->html() ?></div>
+<div class="alert error"><?= $page->alert()->html() ?></div>
 <?php endif ?>
 
 <form method="post" action="<?= $page->url() ?>">

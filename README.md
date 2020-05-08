@@ -1,4 +1,13 @@
-# TESTING BROWSER IS FIREFOX
+# TESTING BROWSER IS FIREFOX 
+
+# Testing
+In case you want to run the project locally make sure to replace 
+the kirby folder with the one from the plainkit installer.
+The starting route is yourdomain.com/login
+if you go to yourdomain.com without logging-in you will receive an error.
+If you tried the website before and it didnt work clear your browser's cache
+first before restarting.
+
 
 # Kirby Plainkit
 
@@ -60,25 +69,3 @@ Plainkit repository from Github.
 ## Documentation
 
 <https://getkirby.com/docs>
-
-## Issues
-
-If you have a Github account, please report issues
-directly on Github: <https://github.com/getkirby/kirby/issues>
-
-Otherwise you can use Kirby's forum: https://forum.getkirby.com
-or send us an email: <support@getkirby.com>
-
-## Ideas & Feature Requests
-
-If you have ideas for new features, please submit a ticket in our ideas repository:
-<https://github.com/getkirby/kirby/ideas>
-
-## Support
-
-<https://getkirby.com/support>
-
-## Copyright
-
-© 2009-2019 Bastian Allgeier (Bastian Allgeier GmbH)
-<https://getkirby.com>

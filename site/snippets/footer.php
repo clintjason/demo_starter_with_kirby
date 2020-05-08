@@ -11,7 +11,7 @@
     </div>
 </footer>
 <a href="#" id="up-btn" class="scrollup">
-<?php if($image = $site->image('up1.png')): ?>
+<?php if($image = $site->image('up1.webp')): ?>
     <img src="<?= $image->url() ?>" alt="Back To Top Icon">
 <?php endif ?>
 </a>

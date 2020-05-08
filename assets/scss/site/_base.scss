@@ -26,8 +26,11 @@ img {
 }
 
 main {
-    margin-top: 2rem; //5.5
+    margin-top: 8rem;
     padding-bottom: 15px;
+    @media all and (min-width:900px) {
+        margin-top: 5rem;
+    }
 }
 
 .scrollup {

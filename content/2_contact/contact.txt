@@ -40,13 +40,9 @@ Table:
   email: ngassajason@kirby.com
   name: clint
   emailcontent: i am trying to make it
-- 
-  email: nelson@yemeli.com
-  name: Yemeli
-  emailcontent: Fini mon projet monsieur ngassa
--
 
 ----
+
 Text:
 
 ### BeMo Academic Consulting Inc.
